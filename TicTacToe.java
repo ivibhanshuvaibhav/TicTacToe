@@ -68,8 +68,6 @@ public class TicTacToe {
 
     public static void main(String[] args) {
 
-        TicTacToe t = new TicTacToe();
-
         Scanner s = new Scanner(System.in);
         System.out.println("Enter name of player 1: ");
         String name1 = s.nextLine();
@@ -113,7 +111,7 @@ public class TicTacToe {
             printMatrix();
             if (i >= 5) {
                 boolean result = checkResult();
-                if (result == true) {
+                if (result) {
                     if (i % 2 == 1){
                         System.out.println(name1 + " has Won. Congratulations!");
                     } else {
